@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Tabel | SI Akademik</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container nav-wrapper">
+            <div class="logo">🎓 SI Akademik</div>
+
+            <input type="checkbox" id="cek-menu" hidden>
+            <label for="cek-menu" class="menu-toggle">☰</label>
+
+            <nav class="navbar">
+                <a href="index.html">Beranda</a>
+                <a href="input.html">Input Data</a>
+                <a href="data.html" class="active">Data Tabel</a>
+                <a href="#">Jadwal Kuliah</a>
+                <a href="#">Nilai Akademik</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <div class="container">
+            <h2 class="section-title">Daftar Data yang Telah Disimpan</h2>
+
+            <div class="table-wrapper">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama Lengkap</th>
+                            <th>NIM</th>
+                            <th>Jenis Layanan</th>
+                            <th>Keterangan</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabelData">
+                        <!-- Data akan dimuat otomatis lewat JavaScript -->
+                        <tr>
+                            <td colspan="6" class="pesan-kosong">Belum ada data yang dimasukkan</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tombol-bawah">
+                <a href="input.html" class="btn primary-btn">Tambah Data Baru</a>
+                <button id="hapusSemua" class="btn secondary-btn">Hapus Semua Data</button>
+            </div>
+
+            <a href="index.html" class="home-icon"><i class="fas fa-home"></i></a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="copyright">
+                <p>&copy; 2026 Sistem Informasi Akademik. Semua Hak Dilindungi.</p>
+                <p>Dibuat oleh: Viriani Angel (241121724)</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
